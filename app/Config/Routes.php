@@ -30,9 +30,7 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // Route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
-
-$routes->get('users', 'UserController::getAll');
+$routes->get('/', 'CrudController::index');
 
 /**
  * --------------------------------------------------------------------
